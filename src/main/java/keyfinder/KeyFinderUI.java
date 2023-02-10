@@ -32,7 +32,6 @@ public class KeyFinderUI extends JFrame {
         add(resultTextArea, BorderLayout.CENTER);
 
         importButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
 
                 JFileChooser fileChooser = new JFileChooser();
@@ -51,7 +50,6 @@ public class KeyFinderUI extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
-            @Override
             public void run() {
                 new KeyFinderUI().setVisible(true);
             }
